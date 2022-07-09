@@ -31,7 +31,7 @@ from torch_geometric.utils import softmax, add_self_loops, remove_self_loops, se
 from modules_and_utils import get_diracs, get_mask, propagate
 from modules_and_utils import derandomize_cut, GATAConv, get_diracs
 
-#from torch_geometric.nn.norm.graph_size_norm import GraphSizeNorm
+from torch_geometric.nn.norm.graph_size_norm import GraphSizeNorm
 ###########
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
